@@ -9,6 +9,9 @@
 # Weird 'unit tests'
 units/
 
+# DB Connection strings
+db.php
+
 # =========================
 # Windows detritus
 # =========================
