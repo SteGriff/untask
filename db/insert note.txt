@@ -1,0 +1,1 @@
+insert into didit_note(UserID, Content) values (2,'Tom note')

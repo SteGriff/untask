@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Untask - Less To Do.</title>
+<?php require "facets/head.php"; ?>
+
+<link rel="stylesheet" type="text/css" href="/views/gfx/home.css">
+
+</head>
+<body>
+	<?php global $PATH; require "facets/logo.php"; ?>
+	
+	<div id="wrap">
+		<h1 class="soHeroic"><em>Untask</em> is a todo list in the cloud.</h1>
+		<p>It's meant to look good and run smoothly on your PC, your tablet, and your phone. It's super simple and there aren't too many features.
+		<em>Untask uses cookies to store your login session. If you don't want cookies, don't use Untask.</em></p>
+		
+		<p>You can <a href="/register">register</a> for an account.</p>
+		
+		<?php if (isset($_COOKIE['didit-user'])): ?>
+			<p>Go to <a href="/note">your Notes</a></p>
+		<?php else: ?>
+			<form method="post" action="/login">
+				<p><label>
+					<span>User: </span><input type="text" name="username">
+				</label></p>
+				<p><label>
+					<span>Pass: </span><input type="password" name="password">
+				</label></p>
+				<p><label>
+					<span></span><input type="submit" value="Login">
+				</label></p>
+			</form>
+		<?php endif; ?>
+
+	</div>
+</body>
+</html>

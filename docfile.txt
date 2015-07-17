@@ -1,0 +1,19 @@
+REST API overview:
+
+All requests go through a login gate, which is
+/login/
+
+You must POST a username and password to this url to get authenticated.
+You will get a username cookie and password cookie
+
+To make a note, POST to
+/note/
+and set 'Content' to a string in your data body.
+
+To retrieve notes, GET from
+/note/
+and set your Accept header to JSON or (X)HTML (which is the default).
+
+To make a user, POST to
+/user/
+with Username and Password

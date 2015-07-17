@@ -1,0 +1,32 @@
+p{
+	text-align: justify;
+}
+
+h1.soHeroic{
+	font-family: "Century Schoolbook", Georgia, Perpetua, "Times New Roman", serif;
+	margin: 0.3em;
+	font-weight: 300;
+	text-align: justify;
+	letter-spacing: -4px;
+	line-height: 1em;
+}
+
+/*On big screens make heroic bits bigger*/
+@media (min-width: 769px) {
+
+	h1.soHeroic{
+		font-size: 7em;
+		margin: 0.5em;
+		font-weight: 100;
+		text-align: justify;
+	}
+
+}
+
+form label span{
+	width: 4em;
+	display: inline-block;
+}
+form input{
+	font-size: 1em;
+}

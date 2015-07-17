@@ -1,0 +1,82 @@
+/* Note addition controls */
+#noteCreate input, #noteCreate button{
+	float:left;
+	font-size: 2em;
+	padding: 0;
+}
+
+#noteContent{
+	width: 93%;
+	height: 44px;
+	margin-top: 1px;
+}
+#noteAdd{
+	width: 6%;
+	height: 48px;
+}
+@media (max-width: 799px) {
+	#noteContent{
+		width: 80%;
+	}
+	#noteAdd{
+		width: 19%;
+	}
+}
+
+p.note {
+    background-color: #efefef;
+    border: 1px solid #efefef;
+    padding: 5px;
+	width: 97%;
+}
+.group > .note{
+	margin: 0.3em 0;
+}
+
+#noteCreate, #noteRegion{
+	position: absolute;
+	left: 1%;
+	right: 0;
+}
+#noteCreate {
+    bottom: 1%;
+}
+#noteRegion {
+	top: 0;
+    bottom: 4em;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+a.d {
+    color: #054;
+    cursor: pointer;
+    float: right;
+    font-size: larger;
+    font-weight: bold;
+    line-height: 30px;
+    padding: 0 5px 0 0;
+}
+
+/* iPad Safari */
+@media screen and (-webkit-max-device-pixel-ratio: 1) and (min-width: 800px),
+only screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 800px)
+{
+	#noteCreate button{
+		max-width: 44px;
+		max-height: 42px;
+		height: 42px;
+		width: 44px;
+		font-size: 1.5em;
+		text-align: center;
+	}
+	#noteCreate {
+		height: 52px;
+		max-height: 52px;
+		top: 88.5%;
+		margin: 0;
+	}
+	#noteRegion{
+		height: 88%;
+	}
+}

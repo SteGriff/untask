@@ -1,0 +1,19 @@
+CACHE MANIFEST
+#2014-02-25:v1
+
+CACHE:
+home.htm
+docfile.txt
+favicon.ico
+views/home.htm
+views/js/jquery.js
+views/gfx/global.css
+views/gfx/home.css
+views/gfx/notes.css
+views/gfx/img/creating.gif
+views/gfx/img/kindajean.gif
+views/gfx/img/logo.png
+views/gfx/img/logo-sm.png
+
+NETWORK:
+*

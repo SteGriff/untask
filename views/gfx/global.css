@@ -1,0 +1,172 @@
+/*
+Untask Global Styles
+Stephen Griffiths 2013
+
+Blue: 	#08a		Old Blue
+		#054		Untask Blue
+		
+Black: 	#111
+Grey: 	#efefef		Note borders
+		#fafafa		Note background
+White: 	#fefefe
+
+Green: 	#2f3	Chooser buttons
+		#2c3	Borders
+*/
+
+*{margin:0; padding:0;}
+html, body{
+	height: 100%;
+}
+body{
+	font-family: Arial, "Open Sans", sans-serif;
+	color: #111;
+	background-color: #efefef;
+}
+
+.ui-menu-item > a
+{
+	font-size: 1.5em;
+}
+
+#wrap{
+	background: none repeat scroll 0 0 #fefefe;
+	padding: 0 1em;
+	position: absolute;
+    min-height:100%;
+    left: 17.5%;
+	top: 0;
+	right: 0;
+}
+
+
+.clear{
+	clear: both;
+}
+.outlined{
+	border: 1px solid gray;
+}
+	
+#banner{
+	width: 15%;
+	border: none;
+	float: left;
+	position: fixed;
+	top: 2%;
+	left: 1%;
+	background: #054 url('img/logo-sm.png');
+}
+
+.lg{
+	display: none;
+}
+/*Elements for large screens*/
+@media (min-width: 769px) {
+	.lg{
+		display: block;
+	}
+	.sm{
+		display: none;
+	}
+}
+
+h1{
+	font-size: 45px;
+	text-align: center;
+	margin: 0.6em 0 1em 0;
+}
+h2{
+	font-size: 18pt;
+}
+p{
+	font-size: 18pt;
+	margin-bottom: 0.8em;
+}
+p.center{
+	color: #444;
+	text-align: center;
+	width: 100%;
+}
+small{
+	font-size: 16pt;
+	color: #333;
+}
+
+
+/* Forms -- they're vertical by default */
+
+.big input, .big button{
+	font-size: 18pt;
+	display: block;
+	width: 100%;
+}
+
+/* Big screens get horizontal forms */
+@media (min-width: 769px) {
+
+	.big input, .big button{
+		display: inline-block;
+		width: 50%;
+		float:right;
+		margin-right: 24%;
+	}
+	.big label{
+		min-width: 25%;
+		display: inline-block;
+		text-align: right;
+	}
+
+}
+
+/* Chooser */
+
+.chooser {
+    background-color: #00a4aa;
+    border: 2px solid #00c5f7;
+    border-radius: 6px;
+    color: #f8feff;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 1em 0;
+    text-align: center;
+	margin: 0.5em 0;
+}
+.chooser, .chooser * {
+	color: #f8feff;
+	text-decoration: none;
+}
+
+.loading{
+	margin: 50px 0 0 0;
+	text-align: center;
+}
+.loading img{
+	margin-top: 20px;
+}
+
+.topDivide{
+	margin-top: 2em;
+	padding-top: 1em;
+	border-top: 1px solid gray;
+}
+
+.linkBack{
+	margin-top: 2em;
+	text-align: center;
+}
+
+.tip{
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+#logout{
+	position: fixed;
+	left: 1%;
+	bottom: 8px;
+	font-size: large;
+	font-variant: small-caps;
+	text-decoration: none;
+	color: #054;
+}
